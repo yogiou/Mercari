@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mercari</string>
+    <string name="men_category">Men</string>
+    <string name="women_category">Women</string>
+    <string name="all_category">All</string>
+    <string name="sell">Sell</string>
+
+    <string name="timeline_click_toast">Timeline item %1$s is clicked!</string>
+    <string name="fab_click_toast">Floating action button is clicked!</string>
+
+    <string name="no_internet_error">No internet connection.</string>
+    <string name="general_error">Something went wrong.</string>
+</resources>

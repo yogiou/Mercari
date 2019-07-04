@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@android:color/white"
+	android:layout_margin="@dimen/space_level_2"
+	android:orientation="vertical"
+	android:layout_width="match_parent" android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:id="@+id/top_layout"
+		android:layout_marginBottom="@dimen/space_level_2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<androidx.appcompat.widget.AppCompatImageView
+			android:layout_alignParentTop="true"
+			android:id="@+id/product_image"
+			android:adjustViewBounds="true"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:layout_alignParentStart="true"
+			android:layout_alignParentTop="true"
+			android:src="@drawable/badge_soldout"
+			android:id="@+id/status_label"
+			android:layout_width="75dp"
+			android:layout_height="44dp" />
+
+
+		<TextView
+			android:layout_alignParentBottom="true"
+			android:layout_alignStart="@id/product_image"
+			android:textAllCaps="false"
+			android:layout_marginStart="@dimen/space_level_2"
+			android:layout_marginBottom="@dimen/space_level_6"
+			android:text="Text"
+			android:textSize="@dimen/text_size_level_3"
+			android:textColor="@android:color/white"
+			android:id="@+id/product_name"
+			android:layout_alignParentStart="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/bottom_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/space_level_2"
+		>
+
+		<TextView
+			android:layout_centerVertical="true"
+			android:id="@+id/num_of_likes"
+			android:layout_alignParentStart="true"
+			android:drawableStart="@drawable/icon_like"
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/text_size_level_1"
+			android:text="0"
+			android:gravity="center_vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<TextView
+			android:layout_centerVertical="true"
+			android:id="@+id/num_of_comments"
+			android:layout_toEndOf="@id/num_of_likes"
+			android:drawableStart="@drawable/icon_comment"
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/text_size_level_1"
+			android:text="0"
+			android:gravity="center_vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<TextView
+			android:layout_toEndOf="@id/num_of_comments"
+			android:id="@+id/price"
+			android:layout_centerVertical="true"
+			android:layout_alignParentEnd="true"
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/text_size_level_1"
+			android:text="$ 1,900"
+			android:gravity="end"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+	</RelativeLayout>
+
+</LinearLayout>
